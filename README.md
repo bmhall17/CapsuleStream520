@@ -72,5 +72,5 @@ npm test
 
 ## Configuration
 
-All configuarionts are pre-defined.
+All configurations are pre-defined.
 
