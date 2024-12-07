@@ -1,37 +1,76 @@
 # CapsuleStream520
-CS520 Final Project
+## CS520 Final Project
 
-CapsuleStream is a social media app with functionality for user to sign-up/login with proper authentification, generate/update/delete posts, interact with posts (comment/like), search for posts based on tags, see posts by users, see the most popular posts for the previous week, update user settings (receive email notifications and update username/password), and receive notifications of new posts to a provided email. The user is able to interact with other users and navigate through the site using an intuitive navbar. The contained environment leverages the MERN stack to create a front end react implementation for UI, express for interactions between the server and the UI, MongoDB to store relevant user and post schemas, and finally node to operate the server side portion.
+**CapsuleStream** is a social media application that allows users to:
 
-Installation Instructions:
+- Sign up, log in, and authenticate securely
+- Generate, update, and delete posts
+- Interact with posts by commenting and liking
+- Search for posts based on tags
+- View posts from specific users
+- See the most popular posts from the previous week
+- Update user settings (email notifications, username/password)
+- Receive email notifications for new posts
+- Interact with other users and navigate through the app with an intuitive navbar
 
+### Technology Stack:
+- **Frontend**: React (UI)
+- **Backend**: Node.js, Express (server-side interactions)
+- **Database**: MongoDB (for storing user and post data)
+- **Authentication**: JWT (JSON Web Tokens)
+- **Email Notifications**: Nodemailer for sending email notifications
+- **Search**: Full-text search using MongoDB's built-in features
+
+This app uses the **MERN** stack (MongoDB, Express, React, Node.js) to create a full-stack social media experience.
+
+---
+
+## Installation Instructions
+
+To get started with CapsuleStream520 locally, follow the steps below:
+
+### 1. Clone the Repository:
+```bash
 git clone https://github.com/bmhall17/CapsuleStream520
+```
 
+### 2. Install Backend Dependencies
+```bash
 cd CapsuleStream520
-
 cd backend
-
 npm install
+```
 
-cd ..
-
-cd frontend
-
+### 3. Install Frontend Dependencies
+```bash
+cd ../frontend
 npm install
+```
+## Running the App
 
-to run the app as normal:
+To run the app locally, follow the steps below:
 
+### 1. Start the Backend Server
+```bash
 cd backend
 npm start
+```
 
-cd frontend
+### 2. Start the Frontend Reach Application
+```bash
+cd ../frontend
 npm start
+```
 
-and the app will open the app in your browser
+## Running Tests
 
-to run the tests:
-
+To run the backend tests, use the following command:
+```bash
 cd backend
 npm test
+```
 
-All configurations are pre-defined.
+## Configuration
+
+All configuarionts are pre-defined.
+
