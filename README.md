@@ -7,6 +7,8 @@ Installation Instructions:
 
 git clone https://github.com/bmhall17/CapsuleStream520
 
+cd CapsuleStream520
+
 cd backend
 
 npm install
