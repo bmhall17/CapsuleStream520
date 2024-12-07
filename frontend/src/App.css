@@ -1,0 +1,70 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #231d1d;
+  color: #333;
+}
+
+/* App Container */
+.app {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgb(62, 57, 57);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Feed Section */
+.feed {
+  padding: 20px;
+}
+
+.feed h2 {
+  text-align: center;
+  font-size: 0.5rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.post {
+  background-color: #3c3c3c;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.post p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.post small {
+  font-size: 0.8rem;
+  color: gray;
+}
