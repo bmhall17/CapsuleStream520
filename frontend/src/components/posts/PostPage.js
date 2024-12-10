@@ -64,7 +64,7 @@ const PostPage = () => {
       <button onClick={() => navigate(backUrl)}>Back</button>
       <h2>{post.author}'s Post</h2>
       <p>
-        <em>{new Date(post.date).toLocaleString()}</em>
+      <em style={{ color: 'white' }}>{new Date(post.date).toLocaleString()}</em>
       </p>
       {post.image && (
         <img
@@ -73,16 +73,16 @@ const PostPage = () => {
           style={{ width: '300px', height: '300px' }}
         />
       )}
-      <p>Likes: {post.likes}</p>
+      <p style={{ color: 'white' }}>Likes: {post.likes}</p>
       <button onClick={handleLike} disabled={isLiked}>
         {isLiked ? 'Liked' : 'Like'}
       </button>
-      <p style={{ fontSize: '20px' }}>{post.content}</p>
+      <p style={{ color: 'white', fontSize: '20px' }}>{post.content}</p>
       
       {/* Display tags */}
       {post.tags && post.tags.length > 0 && (
         <div>
-          <h3>Tags:</h3>
+          <h3 style={{ color: 'white' }}>Tags:</h3>
           <ul>
             {post.tags.map((tag, index) => (
               <li key={index} style={{ display: 'inline', margin: '0 5px' }}>
@@ -95,7 +95,7 @@ const PostPage = () => {
 
       {/* Comment Section */}
       <div>
-        <h3>Comments</h3>
+      <h3 style={{ color: 'white' }}>Comments</h3>
         <form onSubmit={handleCommentSubmit}>
           <textarea
             value={newComment}
@@ -110,13 +110,13 @@ const PostPage = () => {
         {comments.length > 0 ? (
           comments.map((comment, index) => (
             <div key={index}>
-              <p>
+              <p style={{ color: 'white' }}>
                 <strong>{comment.username}</strong>: {comment.text}
               </p>
             </div>
           ))
         ) : (
-          <p>No comments yet</p>
+          <p style={{ color: 'white' }}>No comments yet</p>
         )}
       </div>
     </div>

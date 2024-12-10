@@ -6,7 +6,9 @@ const transporter = require('../config/emailConfig');
 const getPosts = async (req, res) => {
   try {
     const posts = await Post.find(); // Fetch all posts from the database
+    console.log(posts)
     res.status(200).json(posts);
+    console.log(posts)
   } catch (error) {
     res.status(500).json({ message: 'Error fetching posts' });
   }

@@ -53,7 +53,7 @@ const PostList = () => {
       <PostForm setPosts={setPosts} /> {/* Pass setPosts as a prop to PostForm */}
 
       {posts.length === 0 ? (
-        <p>No posts available</p>
+        <p style={{ color: 'white' }}>No posts available</p>
       ) : (
         <ul className="post-list-grid"> {/* Apply grid container styles */}
           {Array.isArray(posts) && posts.map((post) => (

@@ -37,7 +37,7 @@ const TopPhotosPage = () => {
       <button onClick={() => navigate(backUrl)}>Back</button>
       <h2>Top 10 Posts by Likes in the Past Week</h2>
       {topPosts.length === 0 ? (
-        <p>No posts available</p>
+       <p style={{ color: 'white' }}> No posts available</p>
       ) : (
         <ul className="post-list-grid"> {/* Apply grid container styles */}
           {topPosts.map((post) => (
